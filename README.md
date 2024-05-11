@@ -1,5 +1,12 @@
 # SoundTouch ext
 
+## setup
+
+```sh
+git clone --depth=1 git@github.com:boltomli/st_ext.git
+git submodule update --init --recursive
+```
+
 ## build
 
 ```sh
