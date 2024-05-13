@@ -8,6 +8,7 @@ class Recipe(ConanFile):
 
     def requirements(self):
         self.requires("audiofile/1.1.1")
+        self.requires("glog/0.7.0")
         self.requires("soundtouch/2.3.2")
 
     def layout(self):

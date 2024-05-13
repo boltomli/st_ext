@@ -18,8 +18,10 @@ add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/ext/nanobind)
 nanobind_add_module(${PROJECT_NAME} st_ext.cpp)
 
 find_package(audiofile REQUIRED)
+find_package(glog REQUIRED)
 find_package(SoundTouch REQUIRED)
 target_link_libraries(${PROJECT_NAME} PRIVATE
   audiofile::audiofile
+  glog::glog
   soundtouch::soundtouch
 )

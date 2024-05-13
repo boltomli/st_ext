@@ -1,5 +1,7 @@
 # SoundTouch ext
 
+Refer to [ssrpc](https://github.com/boltomli/ssrpc) for main code.
+
 ## setup
 
 ```sh
@@ -20,5 +22,5 @@ cmake --build .
 
 ```python
 import st_ext
-st_ext.load_audio(list(b"wavedata"))
+audio_bytes = bytes(st_ext.stretch(list(b"wavedata"), 20))
 ```
